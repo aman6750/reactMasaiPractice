@@ -1,23 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import Answer from './components/Answer';
 
 function App() {
+  let info = [
+    {
+      name:"Ritesh",
+      place:"India",
+    infox:{
+      a:1,
+      b:2,
+    },
+  },
+    {name:"Aman",place:"usa"},
+    {name:"pragati",place:"russia"},
+    {name:"gaurav",place:"dubai"},
+    {name:"divya",place:"bithauli"},
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hello></Hello>
+      <h1>hii</h1>
+      {info.map((user)=>(
+        
+          <div>
+            <Answer{...user}/>
+          </div>
+        
+      ))}
     </div>
   );
 }
