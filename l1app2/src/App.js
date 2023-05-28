@@ -1,17 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import List from './Component/List'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        hello react by rajat
-      
-      </header>
+     <List/>
     </div>
+
   );
+
 }
 
 export default App;
+  
