@@ -34,12 +34,22 @@ export default function List(){
             <button onClick={handleAdd}>Add</button>
         </div>
 
+        <div>
+            {list.length>0 && `count is ${list.length}`}
+        </div>
 
-        {list.map((item)=>{
+        <div>
+        {list.map((item,index)=>{
             return (
-              <ListItem onDelete={onDelete} key={item.id}  {...item}/>
+              <ListItem 
+              isHidden ={index%2===0}
+              onDelete={onDelete}
+              key={item.id} 
+              {...item}
+              />
             );
         })}
+        </div>
 
 
         </>
