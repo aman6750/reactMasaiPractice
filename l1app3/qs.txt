@@ -1,0 +1,29 @@
+Q) what is virtual dom?
+
+ans) its an ideal concept where we keep a shallow copy of actual dom in memory and use it to compare changes and only update those changes to actual dom
+   -React-dom
+
+Q) what are hooks?
+
+ans) a set of inbuild react function that helps us to interact with the state of a component => useState ,creating and updating a state variable
+
+Q) What is state in a component?
+
+ans) changable variable that needs to be updated on dom in a component, which are created using useState Hook.
+
+Q) if a component has nothing that changes?
+ans) stateless/pure component
+
+Q) A component which has a state?
+ans) statefull component
+
+Q) why use useState?
+
+ans) useState is a hook in react used to create and update state variable
+
+
+Q) why we need key in listing?
+
+ans)
+
+
